@@ -1,0 +1,31 @@
+{
+  "name": "01-basic-block",
+  "version": "1.0.0",
+  "main": "block.js",
+  "scripts": {
+    "build": "cross-env BABEL_ENV=default node_ENV=production webpack",
+    "dev": "cross-env BABEL_ENV=default webpack --watch"
+  },
+  "author": "Md Arannyk Monon",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.2.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "transform-react-js"
+    ]
+  },
+  "devDependencies": {
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
